@@ -1,0 +1,16 @@
+.chat-input {
+    width: 100%;
+    background-color: #fff;
+
+    form {
+        position: relative;
+    }
+
+    .submit-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 24px;
+        font-weight: 700;
+    }
+}

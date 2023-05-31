@@ -1,0 +1,16 @@
+.footer-ul-title {
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.footer-ul {
+    padding-left: 0;
+    font-size: 13px;
+    list-style-type: none;
+}
+
+.footer-ul li {
+    height: 30px;
+    line-height: 30px;
+}

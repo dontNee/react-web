@@ -1,0 +1,10 @@
+$nav-height: 60px;
+
+.sidebar {
+    width: 364px;
+    height: calc(100vh - $nav-height);
+    top: $nav-height;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+

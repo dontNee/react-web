@@ -2,15 +2,15 @@ import styles from "@/styles/chatmsg.module.scss";
 import { useEffect, useState } from "react";
 import * as eventListenHandler from "@/utils/registerEventListener"
 
-export default function ChatMsg() {
+export default function ChatMsg(props: any) {
     return (
         <>
-            <ChatInput />
+            <ChatInput {...props} />
         </>
     );
 }
 
-function ChatInput() {
+function ChatInput(props: any) {
 
     // 是否显示发布按钮
     const [showSubmit, setShowSubmit] = useState(false as boolean);
@@ -50,8 +50,8 @@ function ChatInput() {
         const elem: any = document.getElementById("textarea-message");
         // 获取元素内容
         const elemValue = elem.value;
-        // 打印内容
-        console.log(elemValue);
+        // 发送内容
+        props && props.sendMsg(elemValue);
         // 提交后清空元素内容
         elem.value = "";
     }
